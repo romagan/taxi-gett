@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Gett Taxi</title>
+
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+
+    <link rel="preload" href="fonts/robotoregular.woff2" as="font">
+    <link rel="preload" href="fonts/robotomedium.woff2" as="font">
+    <link rel="preload" href="fonts/robotobold.woff2" as="font">
+    <link rel="preload" href="fonts/robotolight.woff2" as="font">
+    <link rel="preload" href="fonts/robotoitalic.woff2" as="font">
+
+    <link href="css/style.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+     <div class="popup-wrapper" aria-label="Затемнение при открытии модального окна"></div>
+
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+
+          <ul class="main-nav__list">
+
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__item-link" href="#gain-section">Заработок</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#bonus-section">Бонусы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#join-section">Авто</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#reviews-section">Отзывы</a>
+            </li>
+
+          </ul>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+          <p class="main-nav__phone">
+            <a class="main-nav__phone-link" href="tel:+78127777777">8(812) 777-77-77</a>
+          </p>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+    
+      <div class="container hero">
+        <div class="main-wrapper">
+
+          <h1 class="main__title">Лучшие водители выбирают <span>Gett</span></h1>
+
+          <form class="main__form" action="">
+
+            <select class="main__form-select" name="brand" id="brand-select">
+              <option selected="" hidden="" disabled="">Марка авто</option>
+            </select>
+
+            <select class="main__form-select" name="model" id="model-select">
+              <option selected="" hidden="" disabled="">Модель</option>
+            </select>
+
+            <select class="main__form-select" name="year" id="year-select">
+              <option selected="" hidden="" disabled="">Год выпуска</option>
+            </select>
+
+            <input class="main__form-input" type="tel" name="phone" id="main-tel" placeholder="*номер телефона" required="">
+            <button class="main__form-button button" type="submit">
+              <span>Стать водителем</span>
+              <svg version="1.1" width="23" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 476.213 476.213" style="enable-background:new 0 0 476.213 476.213;" xml:space="preserve">
+                <polygon points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 
+                345.606,368.713 476.213,238.106 "></polygon>
+              </svg>
+            </button>
+          </form>
+
+          <small class="main__privacy">Согласен с политикой конфиденциальности</small>
+
+        </div>
+      </div>
+
+      <section class="advantages">
+        <div class="container">
+          <h2 class="advantages__title">Станьте лучшими!</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--1">Работай<br> как частник</li>
+            <li class="advantages__item advantages__item--2">В 3 раза<br> больше заказов</li>
+            <li class="advantages__item advantages__item--3">Бесплатное<br> подключение</li>
+            <li class="advantages__item advantages__item--4">Выберите<br> свободный график</li>
+            <li class="advantages__item advantages__item--5">Поддержка<br> 24/7</li>
+            <li class="advantages__item advantages__item--6">Подключение<br> в подарок!</li>
+          </ul>
+        </div>
+        
+      </section>
+
+      <section class="instruction">
+        <div class="container">
+          <p class="instruction__slogan">Отправляйтесь в путь!</p>
+          <h2 class="instruction__title">Начать очень просто</h2>
+
+          <ul class="instruction__list">
+            <li class="instruction__step instruction__step--first">
+              <h3 class="instruction__step-title">Оставить заявку онлайн</h3>
+              <p class="instruction__step-description">Расскажите о себе и своём автомобиле. Мы свяжемся с Вами и подключим к системе.</p>
+            </li>
+            <li class="instruction__step instruction__step--second">
+              <h3 class="instruction__step-title">Установить приложение и начать работу</h3>
+              <p class="instruction__step-description">Как только ваша кандидатура будет одобрена для работы с Uber в качестве независимого подрядчика, мы предоставим вам все необходимое для достижения успеха.</p>
+            </li>
+            <li class="instruction__step instruction__step--third">
+              <h3 class="instruction__step-title">Получайте заказы</h3>
+              <p class="instruction__step-description">Мы можем подключить Вас сразу к UBER, GETT и Яндекс.Такси. Это будет гораздо выгоднее для Вас.</p>
+            </li>
+          </ul>
+
+          <a class="instruction__button button" href="#">Регистрация</a>
+        
+        </div>
+      </section>
+
+      <section class="gain" id="gain-section">
+        <div class="container">
+          <h2 class="gain__title">Регулируйте заработок сами!</h2>
+          <div class="gain__benefits-wrapper">
+            <p class="gain__benefit">Доход от <span>6 800</span> руб./день</p>
+            <p class="gain__benefit">Работа в режиме <span>5</span> дней в неделю</p>
+          </div>
+
+          <ul class="gain__list">
+            <li class="gain__item gain__item--1">
+              <h3 class="gain__item-title">1,5 – 2 часа в день</h3>
+              <p class="gain__item-description">ежемесячный доход<br> от <span>14</span> до <span>26</span> тысяч рублей</p>
+               <a class="gain__button gain__button--1 button" href="#">Подробнее</a>
+            </li>
+            <li class="gain__item gain__item--2">
+              <h3 class="gain__item-title">4 – 5 часов в день</h3>
+              <p class="gain__item-description">ежемесячный доход<br> от <span>44</span> до <span>63</span> тысяч рублей</p>
+              <a class="gain__button gain__button--2 button" href="#">Подробнее</a>
+            </li>
+            <li class="gain__item gain__item--3">
+              <h3 class="gain__item-title">8 – 9 часов в день</h3>
+              <p class="gain__item-description">ежемесячный доход<br> от <span>96</span> до <span>137</span> тысяч рублей</p>
+              <a class="gain__button gain__button--3 button" href="#">Подробнее</a>
+            </li>
+          </ul>
+        </div>
+
+        <section class="gain__popup gain__popup--1 popup">
+          <h3 class="gain__popup-title">1-2 часа в день</h3>
+          <ul class="gain__popup-list">
+            <li class="gain__popup-item">Можете брать заказы вдоль маршрута от дома до работы и обратно</li>
+            <li class="gain__popup-item">Зарабатываете просто делая все то же самое, что и делали до этого</li>
+            <li class="gain__popup-item">Подходит для начинающих и для тех, кто ищет подработку</li>
+            <li class="gain__popup-item">Время работы в день: 2 часа</li>
+            <li class="gain__popup-item">Время работы в неделю: 5 дней</li>
+            <li class="gain__popup-item">Доход в месяц: <span>от 14 000₽ до 26 000₽</span></li>
+          </ul>
+          <form class="gain__popup-form" action="" method="post">
+            <input class="gain__popup-input" type="tel" name="phone" id="gain-tel-1" placeholder="Ваш номер телефона" required="">
+            <button class="gain__popup-link button" type="submit">Подключиться</button>
+          </form>
+          <button class="popup__close button" type="button">Закрыть</button>
+        </section>
+
+        <section class="gain__popup gain__popup--2 popup">
+          <h3 class="gain__popup-title">4-5 часов в день</h3>
+          <ul class="gain__popup-list">
+            <li class="gain__popup-item">Можете брать заказы вдоль маршрута от дома до работы и обратно</li>
+            <li class="gain__popup-item">Зарабатываете просто делая все то же самое, что и делали до этого</li>
+            <li class="gain__popup-item">Работает, когда хотите и сколько хотите</li>
+            <li class="gain__popup-item">Берете заказы в пиковые часы по высоким ценам</li>
+            <li class="gain__popup-item">Хороший уровень дохода</li>
+            <li class="gain__popup-item">Время работы в день: 5 часов</li>
+            <li class="gain__popup-item">Время работы в неделю: 5 дней</li>
+            <li class="gain__popup-item">Доход в месяц: <span>от 44 000₽ до 63 000₽</span></li>
+          </ul>
+          <form class="gain__popup-form" action="" method="post">
+            <input class="gain__popup-input" type="tel" name="phone" id="gain-tel-2" placeholder="Ваш номер телефона" required="">
+            <button class="gain__popup-link button" type="submit">Подключиться</button>
+          </form>
+          <button class="popup__close button" type="button">Закрыть</button>
+        </section>
+
+        <section class="gain__popup gain__popup--3 popup">
+          <h3 class="gain__popup-title">8-9 часов в день</h3>
+          <ul class="gain__popup-list">
+            <li class="gain__popup-item">Берете самые дорогие заказы</li>
+            <li class="gain__popup-item">Работает, когда хотите и сколько хотите</li>
+            <li class="gain__popup-item">Берете заказы в пиковые часы по высоким ценам</li>
+            <li class="gain__popup-item">Хороший уровень дохода</li>
+            <li class="gain__popup-item">Большую часть расходов на авто мы берем на себя, мы ценим тех, кто много ездит</li>
+            <li class="gain__popup-item">Время работы в день: 9 часов</li>
+            <li class="gain__popup-item">Время работы в неделю: 5 дней</li>
+            <li class="gain__popup-item">Доход в месяц: <span>от 96 000₽ до 137 000₽</span></li>
+          </ul>
+          <form class="gain__popup-form" action="" method="post">
+            <input class="gain__popup-input" type="tel" name="phone" id="gain-tel-3" placeholder="Ваш номер телефона" required="">
+            <button class="gain__popup-link button" type="submit">Подключиться</button>
+          </form>
+          <button class="popup__close button" type="button">Закрыть</button>
+        </section>
+        
+      </section>
+
+      <section class="join" id="join-section">
+
+        <div class="container">
+
+          <ul class="join__list">
+
+            <li class="join__item join__item--left">
+              <h2 class="join__title">Как стать водителем?</h2>
+              <h3 class="join__item-title">Напрямую</h3>
+              <img class="join__rate" src="img/4stars.svg" width="150" height="34" alt="Рейтинг по звездам">
+              <p class="join__item-description">Для подключения напрямую необходимо зарегистрировать юридическое лицо</p>
+              <h4 class="join__task-title">Водитель своими силами:</h4>
+              <ul class="join__task-list">
+                <li class="join__task-item">уплачивает налоги</li>
+                <li class="join__task-item">ведет бухгалтерскую отчетность</li>
+                <li class="join__task-item">регистрирует юридическое лицо</li>
+                <li class="join__task-item">открывает расчетный счет</li>
+              </ul>
+              <a class="join__button button" href="#">Оставить заявку</a>
+            </li>
+
+            <li class="join__item join__item--right">
+              <h3 class="join__item-title">Через официального партнера</h3>
+              <img class="join__rate" src="img/5stars.svg" width="150" height="34" alt="Рейтинг по звездам">
+              <p class="join__item-description">Gett сотрудничает с партнерами в РФ, которые имеют ООО, или ИП и расчетный счет. Официальные партнеры подключают водителей и проводят взаиморасчеты с Gett</p>
+              <h4 class="join__task-title">Партнеры Gett берут на себя:</h4>
+              <ul class="join__task-list">
+                <li class="join__task-item">бухгалтерские издержки</li>
+                <li class="join__task-item">содержание юридического лица</li>
+                <li class="join__task-item">банковские издержки</li>
+              </ul>
+              <a class="join__button button" href="#">Оставить заявку</a>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="proposal">
+        <h2 class="visually-hidden">Подключение к программе UBER</h2>
+        <div class="container">
+
+          <form action="" class="proposal__form">
+            <h3 class="proposal__form-title">Создайте учетную запись</h3>
+
+            <div class="proposal__wrapper">
+
+              <div class="proposal__form-wrapper">
+                <fieldset class="proposal__input-wrapper">
+                  <label class="proposal__label" for="proposal-name">Имя</label>
+                  <input class="proposal__input" type="text" name="name" id="proposal-name" required="">
+                </fieldset>
+
+                <div class="proposal__input-wrapper">
+                  <label class="proposal__label" for="proposal-surname">Фамилия</label>
+                  <input class="proposal__input" type="text" name="surname" id="proposal-surname">
+                </div>
+              </div>
+
+              <div class="proposal__form-wrapper">
+                <fieldset class="proposal__input-wrapper">
+                  <label class="proposal__label" for="proposal-email">Электронная почта</label>
+                  <input class="proposal__input" type="email" name="email" id="proposal-email" required="">
+                </fieldset>
+
+                <fieldset class="proposal__input-wrapper">
+                  <label class="proposal__label" for="proposal-password">Пароль</label>
+                  <input class="proposal__input" type="password" name="password" id="proposal-password">
+                </fieldset>
+              </div>
+
+              <div class="proposal__form-wrapper">
+                <fieldset class="proposal__input-wrapper">
+                  <label class="proposal__label" for="proposal-tel">Номер телефона</label>
+                  <input class="proposal__input" type="tel" name="phone" id="proposal-tel" required="">
+                </fieldset>
+
+                <fieldset class="proposal__input-wrapper">
+                  <label class="proposal__label" for="proposal-city">Город</label>
+                  <input class="proposal__input" type="text" name="city" id="proposal-city">
+                </fieldset>
+              </div>
+
+            </div>
+
+            <div class="proposal__privacy-wrapper">
+              <input class="proposal__input--checkbox visually-hidden" type="checkbox" name="privacy" id="proposal-privacy">
+              <label class="proposal__label proposal__label--privacy" for="proposal-privacy">Указывая свои персональные данные в полях заявки, вы соглашаетесь на <a class="proposal__privacy-link" href="#">их обработку</a>.</label>
+              <button class="proposal__button button" type="submit">Создать</button>
+            </div>
+          </form>
+
+        </div>
+
+      </section>
+
+      <section class="reviews" id="reviews-section">
+        <div class="container">
+
+          <div class="slider">
+            <div class="slider-wrapper">
+
+              <div class="reviews__title-wrapper">
+                <h2 class="reviews__title">Истории водителей</h2>
+                <h3 class="reviews__slogan">Их словами</h3>
+              </div>
+
+              <div style="position:relative">
+                <div class="reviews__slider-padding">
+                  <div style="position:relative">
+                    <div class="reviews__item" id="block" data-slide="1">
+                      <ul class="reviews__list">
+
+                        <li class="reviews__list-item">
+                          <div class="reviews__image-wrapper">
+                            <img class="reviews__image" width="100" height="100" src="https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/bc12ed42-df6a-4413-8897-23cd2a2096a4/desk.jpg" alt="Фотография счастливого клиента">
+                          </div>
+                          <div class="reviews__text-wrapper">
+                              <p class="reviews__review-text">«Моя жизнь изменилась к лучшему, потому что я смогла проводить больше времени с дочерью и мужем».</p>
+                              <cite class="reviews__review-author">Эстер, Найроби</cite>
+                          </div>
+                        </li>
+
+                        <li class="reviews__list-item">
+                          <div class="reviews__image-wrapper">
+                            <img class="reviews__image" width="100" height="100" src="https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/892237f5-20d4-412e-a6f2-7753062e6a9f/desk.jpg" alt="Фотография счастливого клиента">
+                          </div>
+                          <div class="reviews__text-wrapper">
+                              <p class="reviews__review-text">«Моей целью и мечтой всегда была независимость, я хотела стать предпринимателем. Uber появился как раз вовремя».</p>
+                              <cite class="reviews__review-author">Лиз, Богота</cite>
+                          </div>
+                        </li>
+
+                        <li class="reviews__list-item">
+                          <div class="reviews__image-wrapper">
+                            <img class="reviews__image" width="100" height="100" src="https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/d38763a6-caee-4fc5-9803-f2a040c289b9/desk.jpg" alt="Фотография счастливого клиента">
+                          </div>
+                          <div class="reviews__text-wrapper">
+                              <p class="reviews__review-text">«Почему я работаю за рулем? Во-первых, это заработок, а во-вторых — радость от общения с людьми».</p>
+                              <cite class="reviews__review-author">Дэвид, Сан-Франциско</cite>
+                          </div>
+                        </li>
+
+                        <li class="reviews__list-item">
+                          <div class="reviews__image-wrapper">
+                            <img class="reviews__image" width="100" height="100" src="https://d1a3f4spazzrp4.cloudfront.net/chameleon-assets/v1.0.0/bc12ed42-df6a-4413-8897-23cd2a2096a4/desk.jpg" alt="Фотография счастливого клиента">
+                          </div>
+                          <div class="reviews__text-wrapper">
+                              <p class="reviews__review-text">«Моя жизнь изменилась к лучшему, потому что я смогла проводить больше времени с дочерью и мужем».</p>
+                              <cite class="reviews__review-author">Эстер, Найроби</cite>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <button id="prev" class="reviews__button-prev"><svg viewBox="0 0 64 64" width="28" height="28" class="reviews__button-svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 31.946l16.233-17.033 3.247 3.494L12.606 30H60v4H12.676L23.48 45.54l-3.247 3.593L4 32.061l.073-.076L4 31.946z"></path></svg><span class="reviews__button-span">Предыдущий слайд</span></button>
+                <button id="next" class="reviews__button-next"><svg viewBox="0 0 64 64" width="28px" height="28px" class="reviews__button-svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M59.927 31.985l.073.076-16.233 17.072-3.247-3.593L51.324 34H4v-4h47.394L40.52 18.407l3.247-3.494L60 31.946l-.073.039z"></path></svg><span class="reviews__button-span">Следующий слайд</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bonus" id="bonus-section">
+        <div class="container">
+          <h2 class="bonus__title">Бесплатные бонусы</h2>
+
+          <ul class="bonus__list">
+            <li class="bonus__item bonus__item--1">Бензин</li>
+            <li class="bonus__item bonus__item--2">Премии</li>
+            <li class="bonus__item bonus__item--3">Связь</li>
+            <li class="bonus__item bonus__item--4">Сервис</li>
+          </ul>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+
+        <div class="main-footer__left">
+          <ul class="main-footer__social">
+            <li class="main-footer__social-item">
+              <span class="visually-hidden">Пишите нам в WatsApp</span>
+              <a class="main-footer__social-link main-footer__social-link--whatsapp" href="#"></a>
+            </li>
+            <li class="main-footer__social-item">
+              <span class="visually-hidden">Наш Twitter</span>
+              <a class="main-footer__social-link main-footer__social-link--twitter" href="#"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-footer__right">
+          <ul class="main-footer__nav">
+            <li class="main-footer__nav-item">
+              <a class="main-footer__nav-link" href="#gain-section">Заработок</a>
+            </li>
+            <li class="main-footer__nav-item">
+              <a class="main-footer__nav-link" href="#bonus-section">Бонусы</a>
+            </li>
+            <li class="main-footer__nav-item">
+              <a class="main-footer__nav-link" href="#join-section">Авто</a>
+            </li>
+            <li class="main-footer__nav-item">
+              <a class="main-footer__nav-link" href="#reviews-section">Отзывы</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </footer>
+
+    <section class="main-popup popup">
+      <h2 class="popup__title">Старт за 40 минут</h2>
+      <p class="popup__description">Заполните форму и мы свяжемся с Вами в течение 5 минут</p>
+      <form class="popup__form" action="" method="post">
+        <input class="popup__input popup__input--name" type="text" placeholder="Как Вас зовут?" required="">
+        <input class="popup__input popup__input--tel" name="phone" id="popup-tel" type="tel" placeholder="Ваш номер телефона" required="">
+        <div class="popup__file-wrapper">
+          <label><span>Выберите файл</span>
+            <input type="file" name="file">
+          </label>
+        </div>
+        <button class="popup__link button" type="submit">Отправить данные</button>
+      </form>
+      <button class="popup__close button" type="button">Закрыть</button>
+      <small class="popup__privacy">нажимая на кнопку Вы соглашаетесь с политикой конфиденциальности</small>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

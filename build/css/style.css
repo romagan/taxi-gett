@@ -434,7 +434,6 @@ html {
 
 body {
   min-width: 320px;
-  max-width: 1700px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
@@ -798,6 +797,16 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   font-style: italic; }
 
+.main__privacy-link {
+  color: #ffffff;
+  text-decoration: underline; }
+  .main__privacy-link:hover {
+    opacity: 0.8;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease; }
+  .main__privacy-link:active, .main__privacy-link:focus {
+    opacity: 0.6; }
+
 @media (min-width: 768px) {
   .hero {
     min-height: calc(100vh - 54px);
@@ -1072,6 +1081,8 @@ input[type="radio"].visually-hidden {
   background-size: 200px; }
 
 @media (min-width: 768px) {
+  .advantages {
+    margin-bottom: 0; }
   .advantages__title {
     margin: 50px 0; }
   .advantages__list {
@@ -1084,10 +1095,7 @@ input[type="radio"].visually-hidden {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .advantages__item {
-    width: 50%;
-    margin-bottom: 100px; }
-    .advantages__item:last-child {
-      margin-bottom: 100px; }
+    width: 50%; }
   .advantages__item--6 {
     background-position: center 20px; } }
 
@@ -1103,7 +1111,10 @@ input[type="radio"].visually-hidden {
     margin: 90px 0; }
   .advantages__item {
     width: 30%;
+    margin-bottom: 75px;
     background-size: 90px; }
+    .advantages__item:last-child {
+      margin-bottom: 75px; }
   .advantages__item--6 {
     background-size: 200px;
     background-position: center 40px; } }
@@ -2155,6 +2166,16 @@ input[type="radio"].visually-hidden {
   color: #020202;
   text-align: center; }
 
+.popup__privacy-link {
+  color: #000000;
+  text-decoration: underline; }
+  .popup__privacy-link:hover {
+    opacity: 0.8;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease; }
+  .popup__privacy-link:active, .popup__privacy-link:focus {
+    opacity: 0.6; }
+
 .popup__close {
   position: absolute;
   top: 5px;
@@ -2271,3 +2292,89 @@ input[type="radio"].visually-hidden {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; } }
+
+.auto {
+  background-image: url("../img/traffic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center; }
+
+.bg-wrapper {
+  padding: 30px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.8)));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)); }
+
+.auto__title {
+  padding: 0 10px;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+  color: #ffffff; }
+
+.auto__description {
+  margin: 0;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-align: center; }
+
+.auto__button {
+  color: #020202;
+  text-transform: none; }
+
+.auto__button--no {
+  margin-top: 10px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff; }
+
+@media (min-width: 768px) {
+  .bg-wrapper {
+    padding: 50px 0; }
+  .auto__title {
+    margin-bottom: 50px; }
+  .auto__description {
+    margin-bottom: 50px; }
+  .auto__button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .auto__button {
+    width: 45%; }
+  .auto__button--no {
+    margin-top: 0;
+    margin-left: 20px; } }
+
+@media (min-width: 1200px) {
+  .bg-wrapper {
+    padding: 100px 0; }
+  .auto__title {
+    padding: 0 30px;
+    font-size: 40px;
+    line-height: 48px;
+    padding: 0; }
+  .auto__description {
+    font-size: 20px; }
+  .auto__button {
+    position: relative;
+    width: 30%; }
+    .auto__button:first-child::before {
+      content: "";
+      position: absolute;
+      left: -110px;
+      top: -60px;
+      width: 70px;
+      height: 150px;
+      background-image: url("../img/icon-arrow-bottom.svg");
+      background-repeat: no-repeat;
+      background-size: contain; } }

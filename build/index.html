@@ -87,7 +87,7 @@
             </button>
           </form>
 
-          <small class="main__privacy">Согласен с политикой конфиденциальности</small>
+          <small class="main__privacy">Согласен с <a class="main__privacy-link" href="yandex.ru" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a></small>
 
         </div>
       </div>
@@ -129,6 +129,19 @@
 
           <a class="instruction__button button" href="#">Регистрация</a>
         
+        </div>
+      </section>
+
+      <section class="auto">
+        <div class="bg-wrapper">
+          <div class="container">
+            <h2 class="auto__title">Неважно, есть у Вас автомобиль или нет, Вы можете ездить на автомобиле компании</h2>
+            <p class="auto__description">Выберите удобный для Вас вариант</p>
+            <div class="auto__button-wrapper">
+              <a class="auto__button auto__button--yes button" href="#">У меня есть авто</a>
+              <a class="auto__button auto__button--no button" href="#proposal-section">У меня нет авто</a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -254,8 +267,8 @@
         </div>
       </section>
 
-      <section class="proposal">
-        <h2 class="visually-hidden">Подключение к программе UBER</h2>
+      <section class="proposal" id="proposal-section">
+        <h2 class="visually-hidden">Подключение к программе Gett</h2>
         <div class="container">
 
           <form action="" class="proposal__form">
@@ -302,8 +315,8 @@
             </div>
 
             <div class="proposal__privacy-wrapper">
-              <input class="proposal__input--checkbox visually-hidden" type="checkbox" name="privacy" id="proposal-privacy">
-              <label class="proposal__label proposal__label--privacy" for="proposal-privacy">Указывая свои персональные данные в полях заявки, вы соглашаетесь на <a class="proposal__privacy-link" href="#">их обработку</a>.</label>
+              <input class="proposal__input--checkbox visually-hidden" type="checkbox" name="privacy" id="proposal-privacy" checked="">
+              <label class="proposal__label proposal__label--privacy" for="proposal-privacy">Указывая свои персональные данные в полях заявки, вы соглашаетесь на <a class="proposal__privacy-link" href="yandex.ru" target="_blank" rel="noopener noreferrer">их обработку</a>.</label>
               <button class="proposal__button button" type="submit">Создать</button>
             </div>
           </form>
@@ -441,14 +454,14 @@
         <input class="popup__input popup__input--name" type="text" placeholder="Как Вас зовут?" required="">
         <input class="popup__input popup__input--tel" name="phone" id="popup-tel" type="tel" placeholder="Ваш номер телефона" required="">
         <div class="popup__file-wrapper">
-          <label><span>Выберите файл</span>
+          <label>
             <input type="file" name="file">
           </label>
         </div>
         <button class="popup__link button" type="submit">Отправить данные</button>
       </form>
       <button class="popup__close button" type="button">Закрыть</button>
-      <small class="popup__privacy">нажимая на кнопку Вы соглашаетесь с политикой конфиденциальности</small>
+      <small class="popup__privacy">нажимая на кнопку Вы соглашаетесь с <a class="popup__privacy-link" href="yandex.ru" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a></small>
     </section>
 
     <script src="js/jquery.min.js"></script>
